@@ -1,3 +1,8 @@
+/*
+ *	load hostname-address into hashmap from "hosts"
+ *	waitting DNS request on port 5354 and response 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <arpa/inet.h>
@@ -92,6 +97,7 @@ int main(int argc, char **argv)
 		// Print response 
 		print_query(&msg);
 		print_resource_record(msg.answers);
+		printf("\n");
 
 		uchar *p = buffer;
 		if(encode_msg(&msg, &p) != 0) {

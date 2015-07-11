@@ -1,4 +1,7 @@
-
+/*
+ * basic operation to file "hosts" implemented by hashmap.
+ */
+ 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

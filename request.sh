@@ -1,7 +1,7 @@
 #! /bin/bash
 
 if [ $# -ne 1 ] ; then
-	echo "usage: ./findDNS.sh [domain name]"
+	echo "usage: ./request.sh [domain name]"
 	exit -1
 fi
 
